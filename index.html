@@ -1,21 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!-- THIS SOFTWARE IS PROVIDED BY THE AUTHOR "AS IS" AND ANY EXPRESS
 OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
-ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY 
-DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
 DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE 
 GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
 INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER 
 IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
 OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN 
-IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. --><head>
+IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. -->
 
-
-
-
-
-
-
+<head>
+	
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"> 
 	<meta name="keywords" content="steven lu, tetris, game, free, javascript, html5, browser, native, iOS, iPhone, iPad, iPad 2, Android, webkit, opera, chrome, touch, safari">   
 	<meta name="description" content="This is a Free HTML tetris online game that has wide browser support. It provides innovative intuitive touch controls for Apple iOS iPhone iPad products and also Android devices. ">
@@ -28,9 +22,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. --><head>
 	
 	<!-- strokeText.js from http://www.netzgesta.de/dev/text/#overview 
 	
-	I need to switch to displaying game messages using regular elements rather than scrawling on canvas
-	
-	-->
+	I need to switch to displaying game messages using regular elements rather than scrawling on canvas -->
 	<script src="strokeText.js"></script>
 
 	<link rel="stylesheet" href="page.css" type="text/css">
@@ -57,6 +49,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. --><head>
 
 
 
+	<div id="leaderboard-container">
+  <h1>Leaderboard</h1>
+  <ol id="leaderboard"></ol>
+</div>
+	
 <div id="indicatorcontainer"></div>
 
 	<canvas id="board_canvas" width="120" height="250" style="position: fixed; left: 10px; top: 10px; z-index: 1;">
