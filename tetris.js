@@ -1069,18 +1069,6 @@ function displayScores() {
     leaderboard.appendChild(scoreItem);
   }
 }
-
-const restartButton = document.getElementById("restart-button");
-
-let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
-
-restartButton.addEventListener("click", function() {
-  // reset game state here
-});
-
-function updateLeaderboard(score) {
-  leaderboard.push(score);
-  localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
-}	
+	
 	
 }; // end TETRIS namespace (this module system is some weirdness I don't yet fully understand but it works and that's all that matters)
