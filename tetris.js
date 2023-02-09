@@ -1059,6 +1059,13 @@ this.toggle_touch_draw = function () { actually_draw_touches = !actually_draw_to
 this.setScoreIncreasing = function () { isScoreIncreasing = true; score = 0; };
 this.scoreChangeCallback = function (cb) { scoreCallback = cb; };
 
+	var highScores = [];
+
+function addScore(score) {
+  highScores.push(score);
+  highScores.sort(function(a, b) { return b - a; });
+  highScores = highScores.slice(0, 10);
+}
 
 function displayScores() {
   var leaderboard = document.getElementById("leaderboard");
@@ -1069,6 +1076,5 @@ function displayScores() {
     leaderboard.appendChild(scoreItem);
   }
 }
-	
 	
 }; // end TETRIS namespace (this module system is some weirdness I don't yet fully understand but it works and that's all that matters)
