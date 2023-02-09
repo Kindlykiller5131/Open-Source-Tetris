@@ -1070,10 +1070,4 @@ function displayScores() {
   }
 }
 
-addScore(100);
-addScore(200);
-addScore(150);
-displayScores();
-
-
 }; // end TETRIS namespace (this module system is some weirdness I don't yet fully understand but it works and that's all that matters)
