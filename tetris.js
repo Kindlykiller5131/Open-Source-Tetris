@@ -1083,4 +1083,18 @@ function updateLeaderboard(score) {
   localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
 }	
 	
+	const restartButton = document.getElementById("restart-button");
+
+restartButton.addEventListener("click", function() {
+  restartButton.style.backgroundColor = "red";
+  restartButton.innerHTML = "Restarting...";
+
+  setTimeout(function() {
+    // reset game state here
+    restartButton.style.backgroundColor = "lightblue";
+    restartButton.innerHTML = "Restart";
+  }, 1000);
+});
+
+	
 }; // end TETRIS namespace (this module system is some weirdness I don't yet fully understand but it works and that's all that matters)
