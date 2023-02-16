@@ -1,9 +1,3 @@
-
-
-
-
-
-
 var TETRIS = new function () { // namespacing
 	
 function random_det(seed) {
