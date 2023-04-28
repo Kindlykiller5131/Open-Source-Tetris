@@ -219,6 +219,11 @@ var setPause = function(isendgame) {
   mouseControlInterval = "";
   //document.title = "Tetris! GAME OVER";
   if (!isendgame) { drawPaused(); document.title="Tetris! PAUSED";
+  } else {
+	  // Dead. Add score to leaderboard...
+	  highScores.push(score);
+	  highScores.sort();
+	  displayScores();
   }
   paused = true;
   pausedBecauseLostFocus = false; // default this to false
